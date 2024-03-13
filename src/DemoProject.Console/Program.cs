@@ -26,13 +26,15 @@ public class Program
       Console.WriteLine("WRONG FORMAT");
   }
 
-
   private static DayOfWeek CalculateDayOfWeek(int year, int month, int day)
   {
     if (month < 3)
       year--;
 
-    int weekDay = Convert.ToInt32(((day + Math.Floor(2.6 * ((month + 9) % 12 + 1) - 0.2) + year % 100 + Math.Floor(((double)year % 100 / 4)) + Math.Floor((double)year / 400) - 2 * Math.Floor((double)year / 100) - 1) % 7 + 7) % 7 + 1);
+    int weekDay = Convert.ToInt32((
+      (day + Math.Floor(2.6 * ((month + 9) % 12 + 1 - 1) - 0.2) + year % 100 
+      + Math.Floor(((double)year % 100 / 4)) + Math.Floor((double)year / 400) - 2
+      * Math.Floor((double)year / 100) - 1) % 7 + 7) % 7 + 1);
 
     return (DayOfWeek)weekDay;
   }
