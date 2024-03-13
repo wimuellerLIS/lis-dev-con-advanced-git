@@ -21,7 +21,7 @@ public class Program
       int Month = Convert.ToInt32(Match.Groups[0].Value.Split('-')[1]);
       int Day = Convert.ToInt32(Match.Groups[0].Value.Split('-')[2]);
 
-      Console.WriteLine($"The {Input} was a {CalculateDayOfWeek(Year, Month, Day)}");
+      Console.WriteLine($"The {Input} was a {CalculateDayOfWeek(Year, Month, Day)}") ;
     }
     else
       Console.WriteLine("WRONG FORMAT");
