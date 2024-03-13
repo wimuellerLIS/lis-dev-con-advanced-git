@@ -17,7 +17,7 @@ public class Program
 
     if (Match.Success)
     {
-      int Year = Convert.ToInt32(Match.Groups[0].Value.Split('-')[0]);
+      int Year = Convert.ToInt32(Match.Groups[0].Value.Split('-')[0]); 
       int Month = Convert.ToInt32(Match.Groups[0].Value.Split('-')[1]);
       int Day = Convert.ToInt32(Match.Groups[0].Value.Split('-')[2]);
 
