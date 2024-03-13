@@ -23,7 +23,7 @@ public class Program
 
       Console.WriteLine($"The {Input} was a {CalculateDayOfWeek(Year, Month, Day)}");
     }
-    else
+    else 
       Console.WriteLine("WRONG FORMAT");
   }
 
