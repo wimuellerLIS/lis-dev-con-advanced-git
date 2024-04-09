@@ -24,7 +24,7 @@ public class Program
       Console.WriteLine($"The {Input} was a {CalculateDayOfWeek(Year, Month, Day)}");
     }
     else 
-      Console.WriteLine("WRONG FORMAT!");
+      Console.WriteLine("WRONG FORMAT!!");
   }
 
   private static DayOfWeek CalculateDayOfWeek(int year, int month, int day)
